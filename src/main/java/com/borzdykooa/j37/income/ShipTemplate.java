@@ -1,6 +1,10 @@
 package com.borzdykooa.j37.income;
 
-import com.borzdykooa.j37.income.impl.*;
+import com.borzdykooa.j37.income.impl.CruiserTemplate;
+import com.borzdykooa.j37.income.impl.DeathStarTemplate;
+import com.borzdykooa.j37.income.impl.FighterTemplate;
+import com.borzdykooa.j37.income.impl.SpyProbeTemplate;
+import com.borzdykooa.j37.income.impl.TransportTemplate;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;

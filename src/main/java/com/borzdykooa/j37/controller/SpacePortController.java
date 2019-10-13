@@ -12,7 +12,7 @@ import java.util.List;
 @RestController
 public class SpacePortController {
 
-    @PostMapping("/buildShip")
+    @PostMapping("/api/v1/ships/build")
     public List<Ship> buildShip(@RequestBody List<ShipTemplate> shipTemplates) {
         return SpacePort.getInstance().buildShips(shipTemplates);
     }

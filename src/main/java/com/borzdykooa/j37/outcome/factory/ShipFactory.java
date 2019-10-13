@@ -4,7 +4,11 @@ import com.borzdykooa.j37.income.IncomeParameter;
 import com.borzdykooa.j37.income.ShipTemplate;
 import com.borzdykooa.j37.outcome.model.Ship;
 import com.borzdykooa.j37.outcome.parameter.Parameter;
-import com.borzdykooa.j37.outcome.parameter.impl.*;
+import com.borzdykooa.j37.outcome.parameter.impl.Armor;
+import com.borzdykooa.j37.outcome.parameter.impl.Fuel;
+import com.borzdykooa.j37.outcome.parameter.impl.FuelType;
+import com.borzdykooa.j37.outcome.parameter.impl.FuelTypeValue;
+import com.borzdykooa.j37.outcome.parameter.impl.Name;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,8 +17,6 @@ import lombok.Setter;
 public abstract class ShipFactory {
 
     private ShipTemplate shipTemplate;
-
-    public abstract Ship getShip();
 
     public Parameter getArmor() {
         Armor armor = new Armor();
@@ -63,4 +65,6 @@ public abstract class ShipFactory {
     public abstract Parameter getTypeParameter();
 
     public abstract Parameter getUniqueParameter();
+
+    public abstract Ship getShip();
 }
